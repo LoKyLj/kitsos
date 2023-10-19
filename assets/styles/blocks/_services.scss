@@ -1,0 +1,61 @@
+.services {
+    &__container {
+        margin-top: 150px;
+    }
+
+    &__separator {
+        display: Grid;
+        grid-template-columns: 1fr 130px;
+
+        &-heading {
+            @include fontStyle(Montserrat, 600, 30);
+        }
+
+        &-item {
+            margin-left: -50vw;
+            width: auto;
+            writing-mode: vertical-rl;
+            border: 0.5px solid #fff;
+        }
+    }
+} 
+
+.table {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 260px;
+    row-gap: 110px;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+        &-number {
+            @include fontStyle(Montserrat, 500, 70);
+        }
+
+        &-name {
+            @include fontStyle(Montserrat, 500, 30);
+
+            &--wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center ;
+                margin-left: 5px;
+            }
+
+            &--underline {
+                width: 100%;
+                border-bottom: 0.5px solid #fff;
+            }
+        }
+
+        &-info {
+            @include fontStyle(Montserrat, 400, 20);
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}

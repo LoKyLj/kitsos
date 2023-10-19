@@ -1,0 +1,75 @@
+:root {
+    --body-color: #060606;
+    --basic-font: 16px, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font: var(--basic-font);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    background: var(--body-color);
+    overflow-x: hidden;
+    z-index: 10;
+    scroll-behavior: smooth;
+}
+
+.main {
+    flex: 1 0;
+}
+
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+
+// container
+
+.container {
+    @include container;
+}
+
+
+.revealByLoad {
+    &--right {
+        @include slideInRight;
+    }
+
+    &--left {
+        @include slideInLeft;
+    }
+}
+
+.revealByScroll {
+    &--right {
+        @include slideInRight;
+    }
+
+    &--left {
+        @include slideInLeft;
+    }
+}

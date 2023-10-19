@@ -1,0 +1,50 @@
+.footer {
+    border-top: 0.5px solid #fff;
+    margin-top: 150px;
+
+    &__container {
+        margin-top: 60px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__text {
+        @include fontStyle(Montserrat, 400, 20);
+    }
+
+    &__icon {
+        margin-right: 7px;
+    }
+}
+
+.socWebs {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+
+    &__icon {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

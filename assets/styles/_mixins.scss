@@ -1,0 +1,130 @@
+:root {
+	--large-container: 1200px;
+}
+
+@mixin container {
+	width: var(--large-container);
+	margin: 0 auto;
+	padding: 0 15px;
+
+    @include mediaTablet {
+        width: 984px;
+    }
+
+    @include mediaMobile {
+        width: 100%;
+        padding: 0 20px;
+	}
+}
+
+@mixin posCenter {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin hoverUnderlineText {
+	text-decoration: underline;
+	text-decoration-thickness: 0.5px;
+	text-underline-offset: 5px;
+}
+
+@mixin fontSize($count) {
+	font-size: calc($count / 16) + rem;
+}
+
+@mixin fontStyle($fontFamily, $fontWeight, $size) {
+	font-family: $fontFamily;
+	@include fontSize($size);
+	font-weight: $fontWeight;
+}
+
+@mixin remLh($count) {
+	line-height: calc($count / 16) + rem;
+}
+
+@mixin placeholder($color, $font: sans-serif, $size: 14px) {
+	&::-placeholder {
+		opacity: 1;
+		text-transform: uppercase;
+		font-family: $font;
+		color: $color;
+		@include fontSize($size);
+	}
+}
+
+@mixin mediaTablet {
+	@media screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin mediaMobile {
+	@media screen and (max-width: 1023px) {
+		@content;
+	}
+}
+
+// Block that slides in the viewport by loading or scrolling the page
+
+@mixin slideInLeft {
+	transform: translateX(-50vw);
+	opacity: 0;
+	transition: 1s all ease;
+
+	&.active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@mixin slideInRight {
+	transform: translateX(50vw);
+	opacity: 0;
+	transition: 1s all ease;
+
+	&.active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+// Block that slides up in the viewport from bottom
+
+@keyframes slide-up {
+	0% {
+		top: 100vh;
+		opacity: 0;
+	}
+	30% {
+		top: 0vh;
+		opacity: 0;
+	}
+	100% {
+		top: 0vh;
+		opacity: 1;
+	}
+}
+
+// Block that slides down out of the viewport from bottom 
+
+@keyframes slide-down {
+	0% {
+		top: 0vh;
+		opacity: 1;
+	}
+	70% {
+		top: 0vh;
+		opacity: 0;
+	}
+	100% {
+		top: 100vh;
+		opacity: 0;
+	}
+}

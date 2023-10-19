@@ -1,0 +1,74 @@
+.header {
+    border-bottom: 0.5px solid #fff;
+    
+    // Fix header fixed or static
+    // position: fixed;
+    // background-color: #060606;
+    // z-index: 999;
+    // width: 100vw;
+
+    &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-self: center;
+            height: 125px;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        margin-right: 140px;    
+
+        &-item {
+            margin-right: 85px;
+            @include fontStyle(Montserrat, 400, 20);
+
+            &:hover {
+                @include hoverUnderlineText;    
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.location {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 7px;
+    }
+
+    &__name {
+        @include fontStyle(Montserrat, 400, 20);
+    }
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__item {
+        @include fontStyle(Montserrat, 400, 20);
+
+        &:hover {
+            cursor: pointer;
+            @include hoverUnderlineText;
+        }
+    }
+
+    &__separator {
+        width: 0.5px;
+        height: 20px;
+        margin: 0 10px;
+    }
+}
