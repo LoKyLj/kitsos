@@ -48,28 +48,22 @@
     }
 
     &__project {
-        background-color: red;
         transition: 1s all ease;
+        overflow: hidden;
 
         &:hover {
-            background-color: #060606   ;
+            background-color: #060606;
             cursor:pointer;
         }
 
         &-first {
             grid-column-start: 1;
             grid-column-end: 2;
-
-            background-color: #060606;
-            overflow: hidden;
         }
 
         &-second {
             grid-column-start: 2;
             grid-column-end: 3;
-
-            background-color: #060606;
-            overflow: hidden;
         }
 
         &-img {

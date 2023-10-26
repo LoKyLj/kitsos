@@ -52,7 +52,7 @@
         z-index: 1;
         @include flexCenter;
         background-color: transparent;
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.8);
 
         &--display {
             top: 0vh;
@@ -76,26 +76,27 @@
             aspect-ratio: 16/9;
             background-color: lightgray;
         }
+    }
+}
 
-        &-button {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 45px;
-            width: 45px;
-            background: rgba(255, 255, 255, 0.117);
-            @include flexCenter;
-            cursor: pointer;
-        }
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 255, 255, 0.117);
+    @include flexCenter;
+    cursor: pointer;
+    z-index: 2;
 
-        &-pic {
-            width: 40px;
-            height: 40px;
-            transition: all 150ms ease-in-out;
+    &-pic {
+        width: 40px;
+        height: 40px;
+        transition: all 150ms ease-in-out;
 
-            &:hover {
-                fill: white;
-            }
+        &:hover {
+            fill: white;
         }
     }
 }

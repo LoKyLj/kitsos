@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../images/logo 32x32.svg" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
@@ -35,7 +37,74 @@
         </div>
     </header>
 
-    <h1 style="display: flex; align-items: center; justify-content: center; padding-top: 150px;">In development</h1>
+    <section class="gallery">
+        <div class="container gallery__container">
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 1.jpeg" alt="Photo 1">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 2.jpeg" alt="Photo 2">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 3.jpeg" alt="Photo 3">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 4.jpeg" alt="Photo 4">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 5.jpeg" alt="Photo 5">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 6.jpeg" alt="Photo 6">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 7.jpeg" alt="Photo 7">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 8.jpeg" alt="Photo 10">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 9.jpeg" alt="Photo 8">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <img class="gallery__pic" src="../images/projects/project-2/Neos Kosmos 10.jpeg" alt="Photo 9">
+            </div>
+            <div class="gallery__item gallery__item--vertical">
+                <video class="gallery__video" src="../images/projects/project-2/Neos Kosmos video.mp4" alt="Video 1">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="closeButton">
+            <svg class="closeButton-pic" width="16" height="16" fill="gray" class="bi bi-x" viewBox="0 0 16 16">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
+                </path>
+            </svg>
+        </div>
+        <div class="modal-content">
+            <!-- <button class="prev">Предыдущее</button> -->
+            <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                viewBox="0 0 256 256">
+                <path
+                    d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z">
+                </path>
+            </svg>
+            <img class="modal-image" alt="" />
+            <video class="modal-video" controls style="display: none">
+                <source src="" type="video/mp4" />
+                Ваш браузер не поддерживает видео.
+            </video>
+            <svg class="next" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                viewBox="0 0 256 256">
+                <path
+                    d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z">
+                </path>
+            </svg>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container footer__container">
@@ -79,6 +148,6 @@
         </div>
     </footer>
 
-    <script src="./assets/index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>
