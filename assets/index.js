@@ -87,38 +87,51 @@ if (document.querySelector('.video')) {
     videoRemove.addEventListener('click', controlVideo);
 }
 
+// Accordion logic
 
-//
+const accordionTabs = document.querySelectorAll('.accordion__tab');
+
+for (let i = 0; i < accordionTabs.length; i++) {
+    accordionTabs[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("accordion__tab--active");
+
+        /* Toggle between hiding and showing the active panel */
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "grid") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "grid";
+        }
+    });
+}
+
+// const accordionTabs = document.querySelectorAll('.accordion__tab');
+
+// for (let i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//         this.classList.toggle("accordion__tab--active");
+//         let panel = this.nextElementSibling;
+//         if (panel.style.maxHeight){
+//             panel.style.maxHeight = null;
+//         } else {
+//         panel.style.maxHeight = panel.scrollHeight + "px";
+//         }
+//     });
+// }
+
+// Gallery logic
 
 if (document.querySelector('.gallery')) {
-//     const galleryItems = document.querySelectorAll('.gallery__item');
-//     const gallery = document.querySelector('.gallery');
-//     const modal = document.createElement('div');
-//     modal.classList.add('modal');
-
-//     let currentIndex = 0;
-
-//     const openModal = (index) => {
-//         currentIndex = index;
-//         modal.innerHTML = '';
-//         const content = galleryItems[currentIndex].cloneNode(true);
-//         modal.appendChild(content);
-
-//         gallery.appendChild(modal);
-// }   
-
-//     galleryItems.forEach((item, index) => {
-//         item.addEventListener('click', () => openModal(index));
-//     });
-
     document.addEventListener('DOMContentLoaded', function () {
         const galleryItems = document.querySelectorAll('.gallery__item');
         const modal = document.querySelector('.modal');
         const modalImage = document.querySelector('.modal-image');
         const modalVideo = document.querySelector('.modal-video');
         const closeBtn = document.querySelector('.closeButton');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
+        const prevBtn = document.querySelector('.prev--wrapper');
+        const nextBtn = document.querySelector('.next--wrapper');
         let currentImageIndex = -1;
 
         function openModal(index) {

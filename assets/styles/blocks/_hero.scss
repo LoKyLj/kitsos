@@ -83,20 +83,22 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     background: rgba(255, 255, 255, 0.117);
     @include flexCenter;
     cursor: pointer;
     z-index: 2;
 
-    &-pic {
-        width: 40px;
-        height: 40px;
-        transition: all 150ms ease-in-out;
-
-        &:hover {
-            fill: white;
+    &:hover {
+        .closeButton-pic {
+                fill: white;
         }
+    }
+
+    &-pic {
+        width: 30px;
+        height: 30px;
+        transition: all 150ms ease-in-out;
     }
 }

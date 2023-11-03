@@ -166,35 +166,101 @@
             </div>
 
             <div class="table table__completed">
-                <h2 class="table__heading revealByScroll revealByScroll--left">Completed projects</h2>
+                <h2 class="table__heading table__heading-completed revealByScroll revealByScroll--left">Completed projects</h2>
 
-                <a class="table__project table__project-first revealByScroll revealByScroll--left"
-                    href="./assets/projects/project-1.html">
-                    <img class="table__project-img" src="./assets/images/completed_building_1.png"
-                        alt="Completed building">
-                    <p class="table__project-text"></p>
+                <a class="table__project table__project-first revealByScroll revealByScroll--left" href="./assets/projects/project-1.html">
+                    <img class="table__project-img" src="./assets/images/completed_building_1.png" alt="Completed building">    
                 </a>
 
-                <a class="table__project table__project-second revealByScroll revealByScroll--right"
-                    href="./assets/projects/project-2.html">
-                    <img class="table__project-img" src="./assets/images/completed_building_2.png"
-                        alt="Completed building">
-                    <p class="table__project-text"></p>
+                <a class="table__project table__project-second revealByScroll revealByScroll--right" href="./assets/projects/project-2.html">
+                    <img class="table__project-img" src="./assets/images/completed_building_2.png" alt="Completed building">
                 </a>
             </div>
 
             <div class="table table__incomplete">
-                <h2 class="table__heading">Projects in process</h2>
-                <ul class="table__list">
-                    <li class="table__list-item">Location</li>
-                    <li class="table__list-item">Residences</li>
-                    <li class="table__list-item">Floor plan</li>
-                </ul>
-                <div class="table__info">
-                    <p class="table__info-item"></p>
-                    <p class="table__info-item"></p>
+                <h2 class="table__heading revealByScroll revealByScroll--left">Projects in process</h2>
+                <div class="table__description--wrapper">
+                    <p class="table__description revealByScroll revealByScroll--right">Glyfada is located in the heart of southern suburbs of Athens right above the sea and next to ‘’The Ellinikon’’, one of the biggest projects throughout Europe.</p>
+                    <p class="table__description revealByScroll revealByScroll--right">It is also at a short distance from the port of Piraeus and Athens International Airport ‘’Eleftherios Venizelos’’.</p>
                 </div>
-                <div class="table__img"></div>
+                
+                <a class="table__project table__project-third revealByScroll revealByScroll--left" href="./assets/projects/project-3.html">
+                    <img class="table__project-img" src="./assets/images/unfinished_building.png" alt="Unfinished building">
+                </a>
+
+                <div class="accordion">
+                    <div class="accordion__tab">
+                        <p class="accordion__tab-heading">Location of the object</p>
+                        <img class="accordion__arrowIcon" src="./assets/images/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="accordion__panel">
+                        <p class="mapPlaceholder"></p>
+                    </div>
+
+                    <div class="accordion__tab">
+                        <p class="accordion__tab-heading">Residences</p>
+                        <img class="accordion__arrowIcon" src="./assets/images/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="accordion__panel">
+                        <ul class="accordion__info">
+                            <h4 class="accordion__info-heading">Project details</h4>
+                            <p class="accordion__info-item">Maisonette D1</p>
+                            <p class="accordion__info-item">Floor D & E</p>
+                            <p class="accordion__info-item">122 m²</p>
+                        </ul>
+
+                        <div class="accordion__info">
+                            <h4 class="accordion__info-heading">Description</h4>
+                            <p class="accordion__info-item">A two-level luxurious maisonette with three bedrooms and unlimited sea view</p>
+                        </div>
+
+                        <ul class="accordion__info">
+                            <h4 class="accordion__info-heading">Project details</h4>
+                            <p class="accordion__info-item">Maisonette D2</p>
+                            <p class="accordion__info-item">Floor D & E</p>
+                            <p class="accordion__info-item">122 m²</p>
+                        </ul>
+
+                        <div class="accordion__info">
+                            <h4 class="accordion__info-heading">Description</h4>
+                            <p class="accordion__info-item">A two-level luxurious maisonette with three bedrooms and unlimited sea view</p>
+                        </div>
+
+                        <p class="accordion__info-description">The interiors have been emphasized with the particularities of lighting, giving the space an excellent aesthetic. Similarly, the simplicity of the exterior combined with the reflection of light blend harmoniously in a projection of uniqueness.</p>
+                    </div>
+
+                    <div class="accordion__tab">
+                        <p class="accordion__tab-heading">Floor plan</p>
+                        <img class="accordion__arrowIcon" src="./assets/images/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="accordion__panel">
+                        <ol class="accordion__info">
+                            <h4 class="accordion__info-heading">Lower floor</h4>
+                            <li class="accordion__info-item">large open living / dining area with kitchen</li>
+                            <li class="accordion__info-item">one bright master-bedroom</li>
+                            <li class="accordion__info-item">guest WC</li>
+                            <li class="accordion__info-item">fireplace</li>
+                            <hr class="accordion__info-separator">
+                            <li class="accordion__info-item">basement storeroom</li>
+                            <li class="accordion__info-item">parking space</li>
+                            <a class="accordion__download">
+                                <img class="accordion__download-pic" src="./assets/images/document.svg" alt="document">
+                                <p class="accordion__download-text">Watch floor plan</p>
+                            </a>
+                        </ol>
+
+                        <ul class="accordion__info">
+                            <h4 class="accordion__info-heading">Upper floor</h4>
+                            <li class="accordion__info-item">two spacious bedrooms with shared bathroom</li>
+                            <li class="accordion__info-item">unlimited mountain and sea view</li>
+                            <li class="accordion__info-item">private balcony</li>
+                            <a class="accordion__download">
+                                <img class="accordion__download-pic" src="./assets/images/document.svg" alt="document">
+                                <p class="accordion__download-text">Watch floor plan</p>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -72,11 +72,25 @@
 
 .prev, .next {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transition: all 150ms ease-in-out;
 
-        &:hover {
-            fill: white;
+        &--wrapper {
+            height: 100vh;
+            width: 10vw;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                .prev, .next {
+                    fill: white;
+                }
+            }
         }
+}
+
+.next--wrapper{
+    flex-direction: row-reverse;
 }
