@@ -561,29 +561,29 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
   border-bottom: 0.5px solid #fff;
   padding-bottom: 25px;
-  margin-top: 80px;
-  transition: 0.4s;
+  margin-top: 60px;
+  cursor: pointer;
 }
 .accordion__tab:hover {
   cursor: pointer;
-}
-.accordion__tab--active .accordion__arrowIcon {
-  transition: all 0.3s ease-in-out;
-  transform: rotate(180deg);
 }
 .accordion__tab-heading {
   font-family: Montserrat;
   font-size: 1.625rem;
   font-weight: 500;
 }
+.accordion__tab .accordion__arrowIcon {
+  transition: all 0.3s ease-in-out;
+}
 .accordion__panel {
-  display: none;
-  margin-top: 45px;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 50px;
   -moz-column-gap: 50px;
        column-gap: 50px;
-  transition: all 0.3 ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 .accordion__info-heading {
   font-family: Montserrat;

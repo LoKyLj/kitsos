@@ -89,37 +89,26 @@ if (document.querySelector('.video')) {
 
 // Accordion logic
 
-const accordionTabs = document.querySelectorAll('.accordion__tab');
+let accordionTabs = document.getElementsByClassName("accordion__tab");
+let arrowIcons = document.getElementsByClassName("accordion__arrowIcon");
 
 for (let i = 0; i < accordionTabs.length; i++) {
     accordionTabs[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("accordion__tab--active");
-
-        /* Toggle between hiding and showing the active panel */
         let panel = this.nextElementSibling;
-        if (panel.style.display === "grid") {
-            panel.style.display = "none";
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+            panel.style.marginTop = null;
         } else {
-            panel.style.display = "grid";
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.marginTop = "45px";
+        } 
+        if (arrowIcons[i].style.transform) {
+            arrowIcons[i].style.transform = null;
+        } else {
+            arrowIcons[i].style.transform = "rotate(180deg)";
         }
     });
 }
-
-// const accordionTabs = document.querySelectorAll('.accordion__tab');
-
-// for (let i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function() {
-//         this.classList.toggle("accordion__tab--active");
-//         let panel = this.nextElementSibling;
-//         if (panel.style.maxHeight){
-//             panel.style.maxHeight = null;
-//         } else {
-//         panel.style.maxHeight = panel.scrollHeight + "px";
-//         }
-//     });
-// }
 
 // Gallery logic
 

@@ -109,36 +109,30 @@
         justify-content: space-between;
         border-bottom: 0.5px solid #fff;
         padding-bottom: 25px;
-        margin-top: 80px;
-        transition: 0.4s;
+        margin-top: 60px;
+        cursor: pointer;
 
         &:hover {
             cursor: pointer;
         }
-        
-        &--active {
-            .accordion__arrowIcon {
-                transition: all 0.3s ease-in-out;
-                transform: rotate(180deg);
-            }
-        }
-        
 
         &-heading {
             @include fontStyle(Montserrat, 500, 26);
         }
+
+        .accordion__arrowIcon {
+            transition: all 0.3s ease-in-out;
+        }
     }
 
     &__panel {
-        display: none;
-        // max-height: 0;
-        // overflow: hidden;
-
-        margin-top: 45px;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 50px;
         column-gap: 50px;
-        transition: all 0.3 ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
     }
 
     &__info {
