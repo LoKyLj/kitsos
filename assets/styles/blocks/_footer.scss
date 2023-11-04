@@ -27,7 +27,7 @@
     }
 
     &__text {
-        @include fontStyle(Montserrat, 400, 20);
+        @include fontStyle(Roboto, 400, 20);
     }
 
     &__icon {

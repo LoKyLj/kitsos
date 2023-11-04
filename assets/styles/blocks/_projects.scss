@@ -8,7 +8,7 @@
         grid-template-columns: 125px 1fr;
 
         &-heading {
-            @include fontStyle(Montserrat, 600, 30);
+            @include fontStyle(Roboto, 600, 30);
         }
 
         &-item {
@@ -43,13 +43,13 @@
     &__heading {
         display: flex;
         justify-self: center;
-        @include fontStyle(Montserrat, 600, 40);
+        @include fontStyle(Roboto, 600, 40);
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
     &__description {
-        @include fontStyle(Montserrat, 400, 20);
+        @include fontStyle(Roboto, 400, 20);
 
         &:last-child{
             margin-top: 30px;
@@ -117,7 +117,7 @@
         }
 
         &-heading {
-            @include fontStyle(Montserrat, 500, 26);
+            @include fontStyle(Roboto, 500, 26);
         }
 
         .accordion__arrowIcon {
@@ -138,12 +138,12 @@
     &__info {
 
         &-heading {
-            @include fontStyle(Montserrat, 500, 24);
+            @include fontStyle(Roboto, 500, 24);
             margin-bottom: 25px;
         }
 
         &-item {
-            @include fontStyle(Montserrat, 400, 20);
+            @include fontStyle(Roboto, 400, 20);
             margin-top: 20px;
             color: #fff;
             list-style: inside;
@@ -152,7 +152,7 @@
         &-description {
             grid-column-start: 1;
             grid-column-end: 3;
-            @include fontStyle(Montserrat, 400, 20);
+            @include fontStyle(Roboto, 400, 20);
         }
 
         &-separator {
@@ -177,7 +177,7 @@
         }
 
         &-text {
-            @include fontStyle(Montserrat, 700, 20);
+            @include fontStyle(Roboto, 700, 20);
         }
     }
 }

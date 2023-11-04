@@ -1,12 +1,6 @@
 .header {
     border-bottom: 0.5px solid #fff;
     
-    // Fix header fixed or static
-    // position: fixed;
-    // background-color: #060606;
-    // z-index: 999;
-    // width: 100vw;
-
     &__container {
             display: flex;
             justify-content: space-between;
@@ -26,7 +20,7 @@
 
         &-item {
             margin-right: 85px;
-            @include fontStyle(Montserrat, 400, 20);
+            @include fontStyle(Roboto, 400, 20);
 
             &:hover {
                 @include hoverUnderlineText;    
@@ -48,7 +42,7 @@
     }
 
     &__name {
-        @include fontStyle(Montserrat, 400, 20);
+        @include fontStyle(Roboto, 400, 20);
     }
 }
 
@@ -58,7 +52,7 @@
     justify-content: end;
 
     &__item {
-        @include fontStyle(Montserrat, 400, 20);
+        @include fontStyle(Roboto, 400, 20);
 
         &:hover {
             cursor: pointer;

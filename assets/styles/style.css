@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
 :root {
   --large-container: 1200px;
 }
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav__list-item {
   margin-right: 85px;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 7px;
 }
 .location__name {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: end;
 }
 .language__item {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .hero__heading {
   width: 870px;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 4.375rem;
   font-weight: 600;
 }
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .video__text {
   margin-left: 20px;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 140px 1fr;
 }
 .about__separator-heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -324,13 +324,13 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 .about__heading-item {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 2.5rem;
   font-weight: 600;
 }
 .about__heading-est {
   margin-top: 20px;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.5625rem;
   font-weight: 500;
 }
@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 .firstConstruction__paragraph {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
   padding-top: 50px;
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-rows: 0.1fr 1fr 1fr;
 }
 .secondConstruction__heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 2.5rem;
   font-weight: 600;
   grid-column-start: 1;
@@ -394,7 +394,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 .secondConstruction__paragraph {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
   padding-top: 50px;
@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 1fr 130px;
 }
 .services__separator-heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -433,12 +433,12 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 50px 1fr;
 }
 .table__item-number {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 4.375rem;
   font-weight: 500;
 }
 .table__item-name {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.875rem;
   font-weight: 500;
 }
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 0.5px solid #fff;
 }
 .table__item-info {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
   grid-column-start: 1;
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 125px 1fr;
 }
 .projects__separator-heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -502,14 +502,14 @@ h1, h2, h3, h4, h5, h6, p {
 .table__heading {
   display: flex;
   justify-self: center;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 2.5rem;
   font-weight: 600;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 .table__description {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -568,7 +568,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 .accordion__tab-heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.625rem;
   font-weight: 500;
 }
@@ -586,13 +586,13 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.3s ease-out;
 }
 .accordion__info-heading {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 25px;
 }
 .accordion__info-item {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 20px;
@@ -602,7 +602,7 @@ h1, h2, h3, h4, h5, h6, p {
 .accordion__info-description {
   grid-column-start: 1;
   grid-column-end: 3;
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 5px;
 }
 .accordion__download-text {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -662,7 +662,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 0;
 }
 .footer__text {
-  font-family: Montserrat;
+  font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
 }

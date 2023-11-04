@@ -8,7 +8,7 @@
         grid-template-columns: 1fr 130px;
 
         &-heading {
-            @include fontStyle(Montserrat, 600, 30);
+            @include fontStyle(Roboto, 600, 30);
         }
 
         &-item {
@@ -33,11 +33,11 @@
         grid-template-columns: 50px 1fr;
 
         &-number {
-            @include fontStyle(Montserrat, 500, 70);
+            @include fontStyle(Roboto, 500, 70);
         }
 
         &-name {
-            @include fontStyle(Montserrat, 500, 30);
+            @include fontStyle(Roboto, 500, 30);
 
             &--wrapper {
                 display: flex;
@@ -53,7 +53,7 @@
         }
 
         &-info {
-            @include fontStyle(Montserrat, 400, 20);
+            @include fontStyle(Roboto, 400, 20);
             grid-column-start: 1;
             grid-column-end: 3;
         }
