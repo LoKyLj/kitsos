@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 :root {
   --large-container: 1200px;
 }
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav__list-item {
   margin-right: 85px;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 7px;
 }
 .location__name {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: end;
 }
 .language__item {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -211,9 +211,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .hero__heading {
   width: 870px;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 4.375rem;
   font-weight: 600;
+  -webkit-text-emphasis-position: 10px;
+          text-emphasis-position: 10px;
+  text-transform: uppercase;
 }
 .hero__img {
   margin-top: 70px;
@@ -240,7 +243,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .video__text {
   margin-left: 20px;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -304,10 +307,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .about__separator {
   display: Grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns: max-content 1fr;
 }
 .about__separator-heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -324,13 +327,14 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 .about__heading-item {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 2.5rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .about__heading-est {
   margin-top: 20px;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.5625rem;
   font-weight: 500;
 }
@@ -355,13 +359,16 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 .firstConstruction__paragraph {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
   padding-top: 50px;
+  color: rgba(255, 255, 255, 0.9137254902);
 }
 .firstConstruction__paragraph--bold {
   font-weight: 600;
+  font-size: 23px;
+  color: #fff;
 }
 
 .secondConstruction {
@@ -371,12 +378,13 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-rows: 0.1fr 1fr 1fr;
 }
 .secondConstruction__heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 2.5rem;
   font-weight: 600;
   grid-column-start: 1;
   grid-column-end: 3;
   margin-bottom: 75px;
+  text-transform: uppercase;
 }
 .secondConstruction__img {
   grid-column-start: 2;
@@ -394,7 +402,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 .secondConstruction__paragraph {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
   padding-top: 50px;
@@ -405,10 +413,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .services__separator {
   display: Grid;
-  grid-template-columns: 1fr 130px;
+  grid-template-columns: 1fr max-content;
 }
 .services__separator-heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -433,14 +441,15 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 50px 1fr;
 }
 .table__item-number {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 4.375rem;
   font-weight: 500;
 }
 .table__item-name {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.875rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .table__item-name--wrapper {
   display: flex;
@@ -453,7 +462,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 0.5px solid #fff;
 }
 .table__item-info {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
   grid-column-start: 1;
@@ -465,10 +474,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .projects__separator {
   display: Grid;
-  grid-template-columns: 125px 1fr;
+  grid-template-columns: max-content 1fr;
 }
 .projects__separator-heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.875rem;
   font-weight: 600;
 }
@@ -502,14 +511,14 @@ h1, h2, h3, h4, h5, h6, p {
 .table__heading {
   display: flex;
   justify-self: center;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 2.5rem;
   font-weight: 600;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 .table__description {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -522,12 +531,21 @@ h1, h2, h3, h4, h5, h6, p {
   grid-column-end: 3;
 }
 .table__project {
+  position: relative;
   transition: 1s all ease;
   overflow: hidden;
 }
 .table__project:hover {
   background-color: #060606;
   cursor: pointer;
+}
+.table__project:hover .table__project-about--wrapper {
+  opacity: 1;
+  transition: all 0.124s ease-in-out;
+}
+.table__project:hover .table__project-img {
+  opacity: 0.5;
+  transform: scale(1.05);
 }
 .table__project-first {
   grid-column-start: 1;
@@ -543,13 +561,34 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .table__project-img {
   opacity: 1;
-  transition: opacity 124ms linear, transform 124ms linear;
+  transition: opacity 0.124s linear, transform 0.124s linear;
   height: auto;
   display: block;
 }
-.table__project-img:hover {
-  opacity: 0.5;
-  transform: scale(1.05);
+.table__project-about {
+  font-family: Open Sans;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 15px 35px;
+}
+.table__project-about--wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  opacity: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(128, 128, 128, 0.2);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.table__project-arrow {
+  height: 75px;
+}
+.table__project-arrow--wrapper {
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
 }
 
 .accordion {
@@ -568,7 +607,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 .accordion__tab-heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.625rem;
   font-weight: 500;
 }
@@ -586,13 +625,13 @@ h1, h2, h3, h4, h5, h6, p {
   transition: all 0.3s ease-out;
 }
 .accordion__info-heading {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 25px;
 }
 .accordion__info-item {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 20px;
@@ -602,7 +641,7 @@ h1, h2, h3, h4, h5, h6, p {
 .accordion__info-description {
   grid-column-start: 1;
   grid-column-end: 3;
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -625,7 +664,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 5px;
 }
 .accordion__download-text {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -662,7 +701,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 0;
 }
 .footer__text {
-  font-family: Roboto;
+  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
 }

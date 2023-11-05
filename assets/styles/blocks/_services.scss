@@ -5,10 +5,10 @@
 
     &__separator {
         display: Grid;
-        grid-template-columns: 1fr 130px;
+        grid-template-columns: 1fr max-content;
 
         &-heading {
-            @include fontStyle(Roboto, 600, 30);
+            @include fontStyle(Open Sans, 600, 30);
         }
 
         &-item {
@@ -33,11 +33,12 @@
         grid-template-columns: 50px 1fr;
 
         &-number {
-            @include fontStyle(Roboto, 500, 70);
+            @include fontStyle(Open Sans, 500, 70);
         }
 
         &-name {
-            @include fontStyle(Roboto, 500, 30);
+            @include fontStyle(Open Sans, 500, 30);
+            text-transform: uppercase;
 
             &--wrapper {
                 display: flex;
@@ -53,7 +54,7 @@
         }
 
         &-info {
-            @include fontStyle(Roboto, 400, 20);
+            @include fontStyle(Open Sans, 400, 20);
             grid-column-start: 1;
             grid-column-end: 3;
         }

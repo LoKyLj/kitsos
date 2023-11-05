@@ -20,7 +20,7 @@
 
         &-item {
             margin-right: 85px;
-            @include fontStyle(Roboto, 400, 20);
+            @include fontStyle(Open Sans, 400, 20);
 
             &:hover {
                 @include hoverUnderlineText;    
@@ -42,7 +42,7 @@
     }
 
     &__name {
-        @include fontStyle(Roboto, 400, 20);
+        @include fontStyle(Open Sans, 400, 20);
     }
 }
 
@@ -52,7 +52,7 @@
     justify-content: end;
 
     &__item {
-        @include fontStyle(Roboto, 400, 20);
+        @include fontStyle(Open Sans, 400, 20);
 
         &:hover {
             cursor: pointer;

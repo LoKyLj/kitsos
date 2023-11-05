@@ -9,7 +9,9 @@
 
     &__heading {
         width: 870px;
-        @include fontStyle(Roboto, 600, 70);
+        @include fontStyle(Open Sans, 600, 70);
+        text-emphasis-position: 10px;
+        text-transform: uppercase;
     }
 
     &__img {
@@ -39,7 +41,7 @@
 
     &__text {
         margin-left: 20px;
-        @include fontStyle(Roboto, 600, 20);
+        @include fontStyle(Open Sans, 600, 20);
     }
 
     &__container {

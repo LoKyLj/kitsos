@@ -33,7 +33,7 @@ if (document.querySelector('.video')) {
     window.onload = () => {
         const video = document.querySelector('.video__container');
 
-        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
     }
 
     //This fuction reveals object with '.video__container' class and blocks scrolling on the page

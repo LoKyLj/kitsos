@@ -5,10 +5,10 @@
 
     &__separator {
         display: Grid;
-        grid-template-columns: 125px 1fr;
+        grid-template-columns: max-content 1fr;
 
         &-heading {
-            @include fontStyle(Roboto, 600, 30);
+            @include fontStyle(Open Sans, 600, 30);
         }
 
         &-item {
@@ -43,13 +43,13 @@
     &__heading {
         display: flex;
         justify-self: center;
-        @include fontStyle(Roboto, 600, 40);
+        @include fontStyle(Open Sans, 600, 40);
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
     &__description {
-        @include fontStyle(Roboto, 400, 20);
+        @include fontStyle(Open Sans, 400, 20);
 
         &:last-child{
             margin-top: 30px;
@@ -63,12 +63,23 @@
     }
 
     &__project {
+        position: relative;
         transition: 1s all ease;
         overflow: hidden;
 
         &:hover {
             background-color: #060606;
             cursor:pointer;
+
+            .table__project-about--wrapper {
+                opacity: 1;
+                transition: all 0.124s ease-in-out;
+            }
+
+            .table__project-img {
+                opacity: 0.5;
+                transform: scale(1.05);
+            }
         }
 
         &-first {
@@ -88,13 +99,35 @@
 
         &-img {
         opacity: 1;
-        transition: opacity 124ms linear, transform 124ms linear;
+        transition: opacity 0.124s linear, transform 0.124s linear;
         height: auto;
         display: block; 
+        }
 
-            &:hover {
-                opacity: 0.5;
-                transform: scale(1.05);
+        &-about {
+            @include fontStyle(Open Sans, 400, 20);
+            padding: 15px 35px;
+
+            &--wrapper {
+                position: absolute;
+                display: flex;
+                bottom: 0;
+                opacity: 0;
+
+                backdrop-filter: blur(5px);
+                background-color: rgba(128, 128, 128, 0.2);
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        &-arrow {
+            height: 75px;
+
+            &--wrapper {
+                height: 100%;
+                background-color: rgba(128, 128, 128, 0.3);
             }
         }
     }
@@ -117,7 +150,7 @@
         }
 
         &-heading {
-            @include fontStyle(Roboto, 500, 26);
+            @include fontStyle(Open Sans, 500, 26);
         }
 
         .accordion__arrowIcon {
@@ -138,12 +171,12 @@
     &__info {
 
         &-heading {
-            @include fontStyle(Roboto, 500, 24);
+            @include fontStyle(Open Sans, 500, 24);
             margin-bottom: 25px;
         }
 
         &-item {
-            @include fontStyle(Roboto, 400, 20);
+            @include fontStyle(Open Sans, 400, 20);
             margin-top: 20px;
             color: #fff;
             list-style: inside;
@@ -152,7 +185,7 @@
         &-description {
             grid-column-start: 1;
             grid-column-end: 3;
-            @include fontStyle(Roboto, 400, 20);
+            @include fontStyle(Open Sans, 400, 20);
         }
 
         &-separator {
@@ -177,7 +210,7 @@
         }
 
         &-text {
-            @include fontStyle(Roboto, 700, 20);
+            @include fontStyle(Open Sans, 700, 20);
         }
     }
 }
