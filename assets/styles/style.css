@@ -81,17 +81,37 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
   width: var(--large-container);
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1199px) {
   .container {
-    width: 984px;
+    width: 1080px;
+    padding: 0 10px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1080px) {
   .container {
-    width: 100%;
-    padding: 0 20px;
+    width: 920px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .container {
+    width: 728px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .container {
+    width: 440px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    width: 320px;
   }
 }
 
@@ -138,20 +158,25 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 0.5px solid #fff;
 }
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
   height: 125px;
+  z-index: 2;
+}
+.header__item {
+  z-index: 11;
 }
 
 .nav {
   display: flex;
   align-items: center;
+  z-index: 11;
 }
 .nav__list {
   display: flex;
-  margin-right: 140px;
 }
 .nav__list-item {
   margin-right: 85px;
@@ -166,6 +191,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav__list-item:last-child {
   margin-right: 0;
+}
+
+.logo {
+  position: relative;
+}
+.logo--wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.logo__img {
+  z-index: 12;
 }
 
 .location {
@@ -571,6 +612,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
   padding: 15px 35px;
 }
+.table__project-about--bold {
+  font-family: Open Sans;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 .table__project-about--wrapper {
   position: absolute;
   display: flex;
@@ -612,7 +658,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 500;
 }
 .accordion__tab .accordion__arrowIcon {
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  padding-right: 2%;
 }
 .accordion__panel {
   display: grid;
@@ -620,6 +667,8 @@ h1, h2, h3, h4, h5, h6, p {
   row-gap: 50px;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  height: -moz-max-content;
+  height: max-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-out;
@@ -650,6 +699,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .accordion__download {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   margin-top: 80px;
   width: -moz-fit-content;

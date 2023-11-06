@@ -108,6 +108,10 @@
             @include fontStyle(Open Sans, 400, 20);
             padding: 15px 35px;
 
+            &--bold {
+                @include fontStyle(Open Sans, 600, 20);
+            }
+
             &--wrapper {
                 position: absolute;
                 display: flex;
@@ -154,7 +158,8 @@
         }
 
         .accordion__arrowIcon {
-            transition: all 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
+            padding-right: 2%;
         }
     }
 
@@ -163,6 +168,7 @@
         grid-template-columns: 1fr 1fr;
         row-gap: 50px;
         column-gap: 50px;
+        height: max-content;
         max-height: 0;
         overflow: hidden;
         transition: all 0.3s ease-out;
@@ -195,6 +201,7 @@
 
     &__download {
         display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         margin-top: 80px;
         width: fit-content;

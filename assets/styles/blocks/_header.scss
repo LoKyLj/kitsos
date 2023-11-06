@@ -1,22 +1,28 @@
 .header {
     border-bottom: 0.5px solid #fff;
-    
+
     &__container {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
             justify-self: center;
             height: 125px;
+            z-index: 2;
+    }
+
+    &__item {
+        z-index: 11;
     }
 }
 
 .nav {
     display: flex;
     align-items: center;
+    z-index: 11;
 
     &__list {
-        display: flex;
-        margin-right: 140px;    
+        display: flex;    
 
         &-item {
             margin-right: 85px;
@@ -30,6 +36,22 @@
                 margin-right: 0;
             }
         }
+    }
+}
+
+.logo {
+    position: relative;
+
+    &--wrapper {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        @include flexCenter;
+        z-index: 1;
+    }
+
+    &__img {
+        z-index: 12;
     }
 }
 

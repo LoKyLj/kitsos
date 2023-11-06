@@ -106,6 +106,7 @@ for (let i = 0; i < accordionTabs.length; i++) {
             arrowIcons[i].style.transform = null;
         } else {
             arrowIcons[i].style.transform = "rotate(180deg)";
+            arrowIcons[i].style.paddingLeft = "2%";
         }
     });
 }
