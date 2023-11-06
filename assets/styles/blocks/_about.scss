@@ -1,6 +1,18 @@
 .about {
     &__container {
         margin-top: 150px;
+
+        @include tablet {
+            margin-top: 120px;
+        }
+
+        @include wideMobile {
+            margin-top: 100px;
+        }
+
+        @include mediumMobile {
+            margin-top: 80px;
+        }
     }
 
     &__separator {
@@ -9,6 +21,18 @@
 
         &-heading {
             @include fontStyle(Open Sans, 600, 30);
+
+            @include netbook {
+                @include fontStyle(Open Sans, 600, 28);
+            }
+
+            @include wideMobile {
+                @include fontStyle(Open Sans, 600, 22);
+            }
+
+            @include tinyMobile {
+                @include fontStyle(Open Sans, 600, 20);
+            }
         }
 
         &-item {
@@ -25,23 +49,69 @@
         flex-direction: column;
         align-items: center;
 
+        @include netbook {
+            margin-top: 50px;
+        }
+
+        @include wideMobile {
+            margin-top: 40px;
+        }
+
         &-item {
             @include fontStyle(Open Sans, 600, 40);
             text-transform: uppercase;
+
+            @include netbook {
+                @include fontStyle(Open Sans, 600, 36);
+            }
+
+            @include wideMobile {
+                @include fontStyle(Open Sans, 600, 26);
+            }
+
+            @include tinyMobile {
+                @include fontStyle(Open Sans, 600, 22);
+            }
         }
 
         &-est {
             margin-top: 20px;
             @include fontStyle(Open Sans, 500, 25);
+
+            @include netbook {
+                margin-top: 18px;
+                @include fontStyle(Open Sans, 600, 22);
+            }
+
+            @include wideMobile {
+                margin-top: 16px;
+                @include fontStyle(Open Sans, 600, 18);
+            }
+
+            @include mediumMobile {
+                @include fontStyle(Open Sans, 600, 16);
+            }
         }
     }
 }
 
 .firstConstruction {
-    margin-top: 75px;
+    margin-top: 72px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.25fr;
     grid-template-rows: 1fr 1fr;
+
+    @include tablet {
+        margin-top: 60px;
+    }
+
+    @include wideMobile {
+        margin-top: 50px;
+    }
+
+    @include mediumMobile {
+        margin-top: 40px;
+    }
 
     &__img {
         grid-row-start: 1;
@@ -50,11 +120,21 @@
         &-item {
             left: 100%;
             right: 50%;
-            margin-left: -50vw;
+            margin-left: -55vw;
             margin-right: -50vw; 
-            max-width: 45vw;
-            width: 45vw;
+            max-width: 50vw;
+            width: 50vw;
             position: relative;
+
+            @include tinyDesktop {
+                margin-left: -54vw;
+            }
+
+            @include netbook {
+                // max-width: 55vw;
+                // width: 55vw;
+                margin-left: -53vw;
+            }
         }
     }
 
@@ -62,7 +142,14 @@
         @include fontStyle(Open Sans, 400, 20);
         padding-top: 50px;
         color: #ffffffe9;
+        
+        @include tinyDesktop {
+            padding-top: 20px;
+        }
 
+        @include netbook {
+            padding-top: 10px;
+        }
 
         &--bold {
             font-weight: 600;
@@ -75,8 +162,20 @@
 .secondConstruction {
     margin-top: 120px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     grid-template-rows: 0.1fr 1fr 1fr;
+
+    @include netbook {
+        margin-top: 100px;
+    }
+
+    @include wideMobile {
+        margin-top: 80px;
+    }
+
+    @include mediumMobile {
+        margin-top: 60px;
+    }
 
     &__heading {
         @include fontStyle(Open Sans, 600, 40);
@@ -97,14 +196,30 @@
             right: 50%;
             margin-left: -50vw;
             margin-right: -50vw; 
-            max-width: 45vw;
-            width: 45vw;
+            max-width: 50vw;
+            width: 50vw;
             position: relative;
+
+            @include tinyDesktop {
+                margin-left: -51vw;
+            }
+
+            @include netbook {
+                margin-left: -52vw;
+            }
         }
     }
 
     &__paragraph {
         @include fontStyle(Open Sans, 400, 20);
         padding-top: 50px;
+
+        @include tinyDesktop {
+            padding-top: 20px;
+        }
+
+        @include netbook {
+            padding-top: 10px;
+        }
     }
 }

@@ -9,6 +9,23 @@
             justify-self: center;
             height: 125px;
             z-index: 2;
+
+            @include tablet {
+                height: 107px;
+            }
+
+            @include wideMobile {
+                height: 95px;
+                justify-content: end;
+            }
+
+            @include mediumMobile {
+                height: 85px;
+            }
+
+            @include tinyMobile {
+                height: 70px;
+            }
     }
 
     &__item {
@@ -21,12 +38,25 @@
     align-items: center;
     z-index: 11;
 
+    @include wideMobile {
+        display: none;
+    }
+
     &__list {
         display: flex;    
 
         &-item {
             margin-right: 85px;
             @include fontStyle(Open Sans, 400, 20);
+
+            @include netbook {
+                margin-right: 35px;
+            }
+
+            @include tablet {
+                margin-right: 25px;
+                @include fontStyle(Open Sans, 400, 18);
+            }
 
             &:hover {
                 @include hoverUnderlineText;    
@@ -52,6 +82,18 @@
 
     &__img {
         z-index: 12;
+
+        @include tablet {
+            width: 43px;
+        }
+
+        @include wideMobile {
+            width: 40px;
+        }
+
+        @include wideMobile {
+            width: 28px;
+        }
     }
 }
 
@@ -59,12 +101,20 @@
     display: flex;
     align-items: center;
 
+    @include wideMobile {
+        display: none;
+    }
+
     &__icon {
         margin-right: 7px;
     }
 
     &__name {
         @include fontStyle(Open Sans, 400, 20);
+
+        @include tablet {
+            @include fontStyle(Open Sans, 400, 18);
+        }
     }
 }
 
@@ -76,6 +126,18 @@
     &__item {
         @include fontStyle(Open Sans, 400, 20);
 
+        @include tablet {
+            @include fontStyle(Open Sans, 400, 18);
+        }
+
+        @include wideMobile {
+            @include fontStyle(Open Sans, 400, 16);
+        }
+
+        @include mediumMobile {
+            @include fontStyle(Open Sans, 400, 14);
+        }
+
         &:hover {
             cursor: pointer;
             @include hoverUnderlineText;
@@ -86,5 +148,9 @@
         width: 0.5px;
         height: 20px;
         margin: 0 10px;
+
+        @include tablet {
+            margin: 0 7px;
+        }
     }
 }

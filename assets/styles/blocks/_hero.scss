@@ -2,9 +2,27 @@
     position: relative;
 
     &__container {
-        margin-top: 100px; // if header static
+        margin-top: 100px;
 
-        // margin-top: 230px; // if header fixed
+        @include netbook {
+            margin-top: 90px;
+        }
+
+        @include tablet {
+            margin-top: 70px;
+        }
+
+        @include wideMobile {
+            margin-top: 60px;
+        }
+
+        @include mediumMobile {
+            margin-top: 50px;
+        }
+
+        @include tinyMobile {
+            margin-top: 40px;
+        }
     }
 
     &__heading {
@@ -12,10 +30,38 @@
         @include fontStyle(Open Sans, 600, 70);
         text-emphasis-position: 10px;
         text-transform: uppercase;
+
+        @include netbook {
+            @include fontStyle(Open Sans, 600, 56);
+        }
+
+        @include tablet {
+            @include fontStyle(Open Sans, 600, 50);
+        }
+
+        @include wideMobile {
+            @include fontStyle(Open Sans, 600, 36);
+        }
+
+        @include mediumMobile {
+            @include fontStyle(Open Sans, 600, 30);
+        }
+
+        @include tinyMobile {
+            @include fontStyle(Open Sans, 600, 28);
+        }
     }
 
     &__img {
-        margin-top: 70px;
+        margin-top: 60px;
+
+        @include wideMobile {
+            margin-top: 50px;
+        }
+
+        @include mediumMobile {
+            margin-top: 40px;
+        }
 
         &-item {
             left: 50%;
@@ -35,6 +81,10 @@
     display: flex;
     align-items: center;
 
+    @include wideMobile {
+        margin-top: 15px;
+    }
+
     &:hover {
         cursor: pointer;
     }
@@ -42,6 +92,15 @@
     &__text {
         margin-left: 20px;
         @include fontStyle(Open Sans, 600, 20);
+
+        @include wideMobile {
+            @include fontStyle(Open Sans, 600, 18);
+            margin-left: 10px;
+        }
+
+        @include tinyMobile {
+            @include fontStyle(Open Sans, 600, 16);
+        }
     }
 
     &__container {
@@ -51,7 +110,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 1;
+        z-index: 14;
         @include flexCenter;
         background-color: transparent;
         background: rgba(0,0,0,0.8);
@@ -77,6 +136,12 @@
             width: 80%;
             aspect-ratio: 16/9;
             background-color: lightgray;
+        }
+    }
+
+    &__icon-img {
+        @include wideMobile {
+            width: 30px;
         }
     }
 }
