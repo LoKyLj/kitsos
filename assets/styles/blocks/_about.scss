@@ -23,15 +23,15 @@
             @include fontStyle(Open Sans, 600, 30);
 
             @include netbook {
-                @include fontStyle(Open Sans, 600, 28);
+                @include fontSize(28);
             }
 
             @include wideMobile {
-                @include fontStyle(Open Sans, 600, 22);
+                @include fontSize(22);
             }
 
             @include tinyMobile {
-                @include fontStyle(Open Sans, 600, 20);
+                @include fontSize(20);
             }
         }
 
@@ -62,15 +62,15 @@
             text-transform: uppercase;
 
             @include netbook {
-                @include fontStyle(Open Sans, 600, 36);
+                @include fontSize(36);
             }
 
             @include wideMobile {
-                @include fontStyle(Open Sans, 600, 26);
+                @include fontSize(26);
             }
 
-            @include tinyMobile {
-                @include fontStyle(Open Sans, 600, 22);
+            @include mediumMobile {
+                @include fontSize(22);
             }
         }
 
@@ -80,16 +80,17 @@
 
             @include netbook {
                 margin-top: 18px;
-                @include fontStyle(Open Sans, 600, 22);
+                @include fontSize(22);
             }
 
             @include wideMobile {
                 margin-top: 16px;
-                @include fontStyle(Open Sans, 600, 18);
+                @include fontSize(18);
             }
 
             @include mediumMobile {
-                @include fontStyle(Open Sans, 600, 16);
+                margin-top: 12px;
+                @include fontSize(16);
             }
         }
     }
@@ -131,9 +132,22 @@
             }
 
             @include netbook {
-                // max-width: 55vw;
-                // width: 55vw;
                 margin-left: -53vw;
+            }
+
+            @include tablet {
+                max-width: 70vw;
+                width: 70vw;
+            }
+
+            @include wideMobile {
+                max-width: 90vw;
+                width: 90vw;
+            }
+
+            @include mediumMobile {
+                max-width: 95vw;
+                width: 95vw;
             }
         }
     }
@@ -151,10 +165,38 @@
             padding-top: 10px;
         }
 
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding-top: 45px;
+            @include fontSize(18);
+        }
+
+        @include wideMobile {
+            padding-top: 45px;
+        }
+
+        @include mediumMobile {
+            @include fontSize(14);
+            padding-top: 35px;
+        }
+
+        @include tinyMobile {
+            padding-top: 25px;
+        }
+
         &--bold {
             font-weight: 600;
-            font-size: 23px;
+            @include fontSize(22);
             color: #fff;
+
+            @include tablet {
+                @include fontSize(20);
+            }
+
+            @include mediumMobile {
+                @include fontSize(15);
+            }
         }
     }
 }
@@ -167,6 +209,10 @@
 
     @include netbook {
         margin-top: 100px;
+    }
+
+    @include tablet {
+        grid-template-rows: 0.1fr max-content max-content 1fr 1fr;
     }
 
     @include wideMobile {
@@ -183,6 +229,22 @@
         grid-column-end: 3;
         margin-bottom: 75px;
         text-transform: uppercase;
+
+        @include netbook {
+            @include fontSize(36);
+        }
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        @include wideMobile {
+            @include fontSize(26);
+        }
+
+        @include mediumMobile {
+            @include fontSize(22);
+        }
     }
 
     &__img {
@@ -190,6 +252,11 @@
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 4;
+
+        @include tablet {
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
 
         &-item {
             left: 55vw;
@@ -207,6 +274,25 @@
             @include netbook {
                 margin-left: -52vw;
             }
+
+            @include tablet {
+                margin-left: -70vw;
+                max-width: 70vw;
+                width: 70vw;
+                margin-top: 60px;
+            }
+
+            @include wideMobile {
+                margin-left: -90vw;
+                max-width: 90vw;
+                width: 90vw;
+            }
+
+            @include mediumMobile {
+                margin-left: -95vw;
+                max-width: 95vw;
+                width: 95vw;
+            }
         }
     }
 
@@ -220,6 +306,26 @@
 
         @include netbook {
             padding-top: 10px;
+        }
+
+        @include tablet {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding-top: 45px;
+            @include fontSize(18);
+        }
+
+        @include wideMobile {
+            padding-top: 45px;
+        }
+
+        @include mediumMobile {
+            @include fontSize(14);
+            padding-top: 35px;
+        }
+
+        @include tinyMobile {
+            padding-top: 25px;
         }
     }
 }
