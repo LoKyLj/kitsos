@@ -4,30 +4,74 @@
 
     &__container {
         margin-top: 60px;
+        position: relative;
     }
 
     &__info {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            justify-content: start;
+        }
+
+        @include wideMobile {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .fullLogo {
+            @include wideMobile {
+                margin-bottom: 25px;
+            }
+        }
     }
 
     &__list {
         display: flex;
+
+        @include tablet {
+            flex-flow: column;
+            margin-left: 100px;
+        }
+
+        @include wideMobile {
+            margin-left: 0;
+        }
 
         &-item {
             display: flex;
             justify-content: center;
             margin-right: 100px;
 
-            &:last-child {
+            @include tinyDesktop {
+                margin-right: 80px;
+            }
+
+            @include netbook {
+                margin-right: 25px;
+            }
+
+            @include tablet {
+                justify-content: start;
                 margin-right: 0;
+                margin-bottom: 25px;
+            }
+
+            &:last-child {
+                margin: 0;
+                margin-bottom: 10px;
             }
         }
     }
 
     &__text {
         @include fontStyle(Open Sans, 400, 20);
+
+        @include wideMobile {
+            @include fontSize (16); 
+        }
     }
 
     &__icon {
@@ -40,8 +84,18 @@
     justify-content: end;
     margin-bottom: 30px;
 
+    @include wideMobile {
+        position: absolute;
+        right: 5px;
+        bottom: -20px;
+    }
+
     &__icon {
         margin-right: 20px;
+
+        @include tablet {
+            margin-right: 15px;
+        }
 
         &:last-child {
             margin-right: 0;

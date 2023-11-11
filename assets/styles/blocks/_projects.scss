@@ -36,11 +36,6 @@
         }
 
         &-item {
-            // margin-right: -50vw;
-            // width: 100vw;
-            // writing-mode: vertical-rl;
-            // border: 0.5px solid #fff;
-
             background-color: #fff;
             width: 100vw;
             height: 0.5px;
@@ -230,11 +225,46 @@
         }
 
         &-about {
+            display: flex;
+            align-items: start;
             @include fontStyle(Open Sans, 400, 20);
             padding: 15px 35px;
+            flex-direction: column;
+
+
+            @include tablet {
+                @include fontSize(18);
+            }
+
+            @include mediumMobile {
+                @include fontSize(14);
+            }
+
+            &--inner {
+                @include fontStyle(Open Sans, 400, 20);
+
+                @include tablet {
+                    @include fontSize(18);
+                }
+
+                @include mediumMobile {
+                    @include fontSize(14);
+                }
+            }
 
             &--bold {
                 @include fontStyle(Open Sans, 600, 20);
+
+                @include tablet {
+                    display: none;
+                    @include fontSize(18);
+                }
+
+                @include mediumMobile {
+                    @include fontSize(14);
+                }
+
+
             }
 
             &--wrapper {
@@ -252,10 +282,15 @@
         }
 
         &-arrow {
-            height: 75px;
+            height: 65px;
+            width: 65px;
+
+            @include tablet {
+                height: 45px;
+                width: 45px;
+            }
 
             &--wrapper {
-                height: 100%;
                 background-color: rgba(128, 128, 128, 0.3);
             }
         }
@@ -296,6 +331,18 @@
 
         &-heading {
             @include fontStyle(Open Sans, 500, 26);
+
+            @include netbook {
+                @include fontSize (24);
+            }
+
+            @include tablet {
+                @include fontSize (22);
+            }
+
+            @include mediumMobile {
+                @include fontSize (18);
+            }
         }
 
         .accordion__arrowIcon {
@@ -367,7 +414,11 @@
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #f8f9fa;
-    height: 600px;
     width: 100%;
+    aspect-ratio: 16/9;
+
+    @include tablet {
+        aspect-ratio: 4/3;
+    }
 }
 

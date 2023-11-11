@@ -1292,15 +1292,54 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .table__project-about {
+  display: flex;
+  align-items: start;
   font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
   padding: 15px 35px;
+  flex-direction: column;
+}
+@media screen and (max-width: 920px) {
+  .table__project-about {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .table__project-about {
+    font-size: 0.875rem;
+  }
+}
+.table__project-about--inner {
+  font-family: Open Sans;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 920px) {
+  .table__project-about--inner {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .table__project-about--inner {
+    font-size: 0.875rem;
+  }
 }
 .table__project-about--bold {
   font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 600;
+}
+@media screen and (max-width: 920px) {
+  .table__project-about--bold {
+    display: none;
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .table__project-about--bold {
+    font-size: 0.875rem;
+  }
 }
 .table__project-about--wrapper {
   position: absolute;
@@ -1315,10 +1354,16 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 .table__project-arrow {
-  height: 75px;
+  height: 65px;
+  width: 65px;
+}
+@media screen and (max-width: 920px) {
+  .table__project-arrow {
+    height: 45px;
+    width: 45px;
+  }
 }
 .table__project-arrow--wrapper {
-  height: 100%;
   background-color: rgba(128, 128, 128, 0.3);
 }
 
@@ -1357,6 +1402,21 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Open Sans;
   font-size: 1.625rem;
   font-weight: 500;
+}
+@media screen and (max-width: 1080px) {
+  .accordion__tab-heading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .accordion__tab-heading {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .accordion__tab-heading {
+    font-size: 1.125rem;
+  }
 }
 .accordion__tab .accordion__arrowIcon {
   transition: transform 0.3s ease-in-out;
@@ -1424,8 +1484,13 @@ h1, h2, h3, h4, h5, h6, p {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #f8f9fa;
-  height: 600px;
   width: 100%;
+  aspect-ratio: 16/9;
+}
+@media screen and (max-width: 920px) {
+  .mapPlaceholder {
+    aspect-ratio: 4/3;
+  }
 }
 
 .footer {
@@ -1434,27 +1499,78 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer__container {
   margin-top: 60px;
+  position: relative;
 }
 .footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 920px) {
+  .footer__info {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 728px) {
+  .footer__info {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 728px) {
+  .footer__info .fullLogo {
+    margin-bottom: 25px;
+  }
+}
 .footer__list {
   display: flex;
+}
+@media screen and (max-width: 920px) {
+  .footer__list {
+    flex-flow: column;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .footer__list {
+    margin-left: 0;
+  }
 }
 .footer__list-item {
   display: flex;
   justify-content: center;
   margin-right: 100px;
 }
+@media screen and (max-width: 1199px) {
+  .footer__list-item {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .footer__list-item {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .footer__list-item {
+    justify-content: start;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
 .footer__list-item:last-child {
-  margin-right: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .footer__text {
   font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 400;
+}
+@media screen and (max-width: 728px) {
+  .footer__text {
+    font-size: 1rem;
+  }
 }
 .footer__icon {
   margin-right: 7px;
@@ -1465,8 +1581,20 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: end;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 728px) {
+  .socWebs {
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+  }
+}
 .socWebs__icon {
   margin-right: 20px;
+}
+@media screen and (max-width: 920px) {
+  .socWebs__icon {
+    margin-right: 15px;
+  }
 }
 .socWebs__icon:last-child {
   margin-right: 0;
