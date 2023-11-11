@@ -24,16 +24,12 @@
         }
 
         &-item {
-            // margin-left: -50vw;
-            // width: auto;
-            // writing-mode: vertical-rl;
-            // border: 0.5px solid #fff;
-
             background-color: #fff;
-            width: 100vw;
+            width: auto;
             height: 0.5px;
             align-self: center;
-            margin: 5px;
+            margin-left: -50vw;
+            margin-right: 5px;
             border: none;
         }
     }
