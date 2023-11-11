@@ -327,7 +327,9 @@ h1, h2, h3, h4, h5, h6, p {
   text-underline-offset: 5px;
 }
 .language__separator {
-  width: 0.5px;
+  background-color: #fff;
+  width: 1px;
+  border: none;
   height: 20px;
   margin: 0 10px;
 }
@@ -578,7 +580,6 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100vw;
   height: 0.5px;
   align-self: center;
-  margin: 5px;
   border: none;
 }
 .about__heading {
@@ -939,10 +940,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .services__separator-item {
-  margin-left: -50vw;
-  width: auto;
-  writing-mode: vertical-rl;
-  border: 0.5px solid #fff;
+  background-color: #fff;
+  width: 100vw;
+  height: 0.5px;
+  align-self: center;
+  margin: 5px;
+  border: none;
 }
 
 .table {
@@ -1089,10 +1092,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .projects__separator-item {
-  margin-right: -50vw;
+  background-color: #fff;
   width: 100vw;
-  writing-mode: vertical-rl;
-  border: 0.5px solid #fff;
+  height: 0.5px;
+  align-self: center;
+  margin: 5px;
+  border: none;
 }
 
 .table {
