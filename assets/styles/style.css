@@ -574,12 +574,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .about__separator-item {
-  margin-right: -50vw;
+  background-color: #fff;
   width: 100vw;
-  writing-mode: vertical-rl;
-  border: 0.5px solid #fff;
-  justify-self: center;
+  height: 0.5px;
   align-self: center;
+  margin: 5px;
+  border: none;
 }
 .about__heading {
   margin-top: 60px;
