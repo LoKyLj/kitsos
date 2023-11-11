@@ -9,6 +9,18 @@
 
         &-heading {
             @include fontStyle(Open Sans, 600, 30);
+
+            @include netbook {
+                @include fontSize(28);
+            }
+
+            @include wideMobile {
+                @include fontSize(22);
+            }
+
+            @include tinyMobile {
+                @include fontSize(20);
+            }
         }
 
         &-item {
@@ -28,17 +40,52 @@
     column-gap: 260px;
     row-gap: 110px;
 
+    @include tinyDesktop {
+        column-gap: 70px;
+        row-gap: 80px;
+    }
+
+    @include netbook {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        row-gap: 60px;
+    }
+
+    @include wideMobile {
+        row-gap: 40px;
+    }
+
     &__item {
         display: grid;
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: min-content 1fr;
 
         &-number {
             @include fontStyle(Open Sans, 500, 70);
+
+            @include tablet {
+                @include fontSize(60);
+            }
+
+            @include wideMobile {
+                @include fontSize(54);
+            }
         }
 
         &-name {
             @include fontStyle(Open Sans, 500, 30);
             text-transform: uppercase;
+
+            @include tablet {
+                @include fontSize(28);
+            }
+
+            @include wideMobile {
+                @include fontSize(26);
+            }
+
+            @include mediumMobile {
+                @include fontSize(22);
+            }
 
             &--wrapper {
                 display: flex;
@@ -57,6 +104,18 @@
             @include fontStyle(Open Sans, 400, 20);
             grid-column-start: 1;
             grid-column-end: 3;
+
+            @include tablet {
+                @include fontSize(18);
+            }
+
+            @include wideMobile {
+                @include fontSize(16);
+            }
+
+            @include mediumMobile {
+                @include fontSize(14);
+            }
         }
     }
 }
