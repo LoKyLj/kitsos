@@ -100,7 +100,7 @@ for (let i = 0; i < accordionTabs.length; i++) {
             panel.style.marginTop = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            panel.style.marginTop = "45px";
+            panel.style.marginTop = "30px";
         } 
         if (arrowIcons[i].style.transform) {
             arrowIcons[i].style.transform = null;
@@ -120,6 +120,7 @@ if (document.querySelector('.gallery')) {
         const modalImage = document.querySelector('.modal-image');
         const modalVideo = document.querySelector('.modal-video');
         const closeBtn = document.querySelector('.closeButton');
+        const closeBtnBox = document.querySelector('.closeButton-box');
         const prevBtn = document.querySelector('.prev--wrapper');
         const nextBtn = document.querySelector('.next--wrapper');
         let currentImageIndex = -1;
@@ -164,6 +165,7 @@ if (document.querySelector('.gallery')) {
         });
 
         closeBtn.addEventListener('click', closeModal);
+        closeBtnBox.addEventListener('click', closeModal);
         prevBtn.addEventListener('click', showPrevious);
         nextBtn.addEventListener('click', showNext);
 

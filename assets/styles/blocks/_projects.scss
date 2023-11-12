@@ -360,6 +360,11 @@
         max-height: 0;
         overflow: hidden;
         transition: all 0.3s ease-out;
+
+        @include wideMobile {
+            row-gap: 30px;
+            column-gap: 30px;
+        }
     }
 
     &__info {
@@ -367,6 +372,18 @@
         &-heading {
             @include fontStyle(Open Sans, 500, 24);
             margin-bottom: 25px;
+
+            @include netbook {
+                @include fontSize(22);
+            }
+
+            @include tablet {
+                @include fontSize(20);
+            }
+
+            @include wideMobile {
+                @include fontSize(16);
+            }
         }
 
         &-item {
@@ -374,12 +391,36 @@
             margin-top: 20px;
             color: #fff;
             list-style: inside;
+
+            @include tablet {
+                @include fontSize(18);
+            }
+
+            @include wideMobile {
+                @include fontSize(14);
+            }
         }
 
         &-description {
             grid-column-start: 1;
             grid-column-end: 3;
             @include fontStyle(Open Sans, 400, 20);
+
+            @include tinyDesktop {
+                @include fontSize(22);
+            }
+
+            @include tablet {
+                @include fontSize(18);
+            }
+
+            @include wideMobile {
+                @include fontSize(16);
+            }
+
+            @include mediumMobile {
+                @include fontSize(14);
+            }
         }
 
         &-separator {
@@ -394,6 +435,10 @@
         margin-top: 80px;
         width: fit-content;
 
+        @include wideMobile {
+            margin-top: 60px;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -402,10 +447,23 @@
             width: 25px;
             height: 25px;
             margin-right: 5px;
+
+            @include mediumMobile {
+                width: 18px;
+                height: 18px;
+            }
         }
 
         &-text {
             @include fontStyle(Open Sans, 700, 20);
+
+            @include tablet {
+                @include fontSize(18);
+            }
+
+            @include wideMobile {
+                @include fontSize(14);
+            }
         }
     }
 }

@@ -5,6 +5,10 @@
     &__container {
         margin-top: 60px;
         position: relative;
+
+        @include wideMobile {
+            margin-top: 30px;
+        }
     }
 
     &__info {
@@ -14,6 +18,7 @@
 
         @include tablet {
             justify-content: start;
+            align-items: end;
         }
 
         @include wideMobile {
@@ -22,6 +27,10 @@
         }
 
         .fullLogo {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+
             @include wideMobile {
                 margin-bottom: 25px;
             }
@@ -84,7 +93,7 @@
     justify-content: end;
     margin-bottom: 30px;
 
-    @include wideMobile {
+    @include tablet {
         position: absolute;
         right: 5px;
         bottom: -20px;
