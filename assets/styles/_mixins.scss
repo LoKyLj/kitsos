@@ -187,8 +187,10 @@
 		display: block;
 		opacity: 1;
 	}
-	100% {
-		display: none;
+	99% {
 		opacity: 0;
+	}
+	100%{
+		display: none;
 	}
 }

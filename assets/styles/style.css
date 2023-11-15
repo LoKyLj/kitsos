@@ -46,9 +46,11 @@
     display: block;
     opacity: 1;
   }
+  99% {
+    opacity: 0;
+  }
   100% {
     display: none;
-    opacity: 0;
   }
 }
 :root {
@@ -430,7 +432,7 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (max-width: 350px) {
   .hero__heading {
     font-family: Open Sans;
-    font-size: 1.75rem;
+    font-size: 1.625rem;
     font-weight: 600;
   }
 }
