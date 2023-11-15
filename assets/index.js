@@ -33,7 +33,7 @@ if (document.querySelector('.video')) {
     window.onload = () => {
         const video = document.querySelector('.video__container');
 
-        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
     }
 
     //This fuction reveals object with '.video__container' class and blocks scrolling on the page
@@ -50,6 +50,7 @@ if (document.querySelector('.video')) {
     }
 
     const videoAdd = document.querySelector('.video');
+
     videoAdd.addEventListener('click', revealOnClick);
 
     //This function hides object with '.video__container--display' class
@@ -119,7 +120,7 @@ if (document.querySelector('.gallery')) {
         const modal = document.querySelector('.modal');
         const modalImage = document.querySelector('.modal-image');
         const modalVideo = document.querySelector('.modal-video');
-        const closeBtn = document.querySelector('.closeButton');
+        const closeBtn = document.querySelectorAll('.closeButton');
         const closeBtnBox = document.querySelector('.closeButton-box');
         const prevBtn = document.querySelector('.prev--wrapper');
         const nextBtn = document.querySelector('.next--wrapper');
@@ -164,7 +165,10 @@ if (document.querySelector('.gallery')) {
             });
         });
 
-        closeBtn.addEventListener('click', closeModal);
+        closeBtn.forEach(element => {
+            element.addEventListener('click', closeModal);
+        });
+        // closeBtn.addEventListener('click', closeModal);
         closeBtnBox.addEventListener('click', closeModal);
         prevBtn.addEventListener('click', showPrevious);
         nextBtn.addEventListener('click', showNext);
