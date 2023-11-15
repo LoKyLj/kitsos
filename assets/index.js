@@ -76,14 +76,13 @@ if (document.querySelector('.video')) {
         );
     }
 
-    //fix
-    // document.addEventListener('keydown', function (e) {
-    //     if (!document.querySelector('.video__container--hide')) {
-    //         if (e.key === "Escape") {
-    //         hideOnClick();
-    //         }
-    //     }
-    // });
+    document.addEventListener('keydown', function (e) {
+        if (document.querySelector('.video__container--display')) {
+            if (e.key === "Escape") {
+            hideOnClick();
+            }
+        }
+    });
     
     videoRemove.addEventListener('click', controlVideo);
 }
@@ -143,12 +142,14 @@ if (document.querySelector('.gallery')) {
                 modalImage.style.display = 'none';
                 modalVideo.style.display = 'block';
             }
-            modal.style.display = 'block';
+
+            modal.classList.remove('modal--hide');
+            modal.classList.add('modal--display');
             currentImageIndex = index;
         }
 
         function closeModal() {
-            modal.style.display = 'none';
+            modal.classList.add('modal--hide');
         }
 
         function showPrevious() {

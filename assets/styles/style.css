@@ -31,6 +31,26 @@
     opacity: 0;
   }
 }
+@keyframes modal-show {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes modal-hide {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
 :root {
   --body-color: #060606;
   --basic-font: 16px, sans-serif;
@@ -1747,6 +1767,16 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 15;
+}
+.modal--display {
+  display: block;
+  animation-name: modal-show;
+  animation-duration: 0.315s;
+}
+.modal--hide {
+  display: none;
+  animation-name: modal-hide;
+  animation-duration: 0.315s;
 }
 
 .modal-content {

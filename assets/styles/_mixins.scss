@@ -168,3 +168,27 @@
 		opacity: 0;
 	}
 }
+
+// gallery animation
+
+@keyframes modal-show {
+	0% {
+		display: block;
+		opacity: 0;
+	}
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+@keyframes modal-hide {
+	0% {
+		display: block;
+		opacity: 1;
+	}
+	100% {
+		display: none;
+		opacity: 0;
+	}
+}

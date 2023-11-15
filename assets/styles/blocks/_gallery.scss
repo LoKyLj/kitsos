@@ -44,6 +44,18 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 15;
+
+    &--display {
+        display: block;
+        animation-name: modal-show;
+        animation-duration: 0.315s;
+    }
+
+    &--hide {
+        display: none;
+        animation-name: modal-hide;
+        animation-duration: 0.315s;
+    }
 }
 
 .modal-content {
