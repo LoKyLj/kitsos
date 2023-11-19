@@ -9,7 +9,7 @@ const revealByLoad = () => {
     }
 }
 
-window.addEventListener('DOMContentLoaded', revealByLoad);
+window.addEventListener('load', revealByLoad);
 
 
 //This function adding an '.active' class to the object with '.revealByScroll' class by scrolling the page
@@ -31,11 +31,19 @@ window.addEventListener('scroll', revealByScroll);
 if (document.querySelector('.video')) {
         //This function insert iframe to html after DOM load
 
-    window.onload = () => {
+    // window.onload = () => {
+    //     const video = document.querySelector('.video__container');
+
+    //     video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>');
+    // }
+
+    const embedIFrame = () => {
         const video = document.querySelector('.video__container');
 
-        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+        video.insertAdjacentHTML('afterbegin', '<iframe class="video__container-item" src="https://www.youtube.com/embed/F1u8WIb3j7Q?enablejsapi=1&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>');
     }
+
+    window.addEventListener('load', embedIFrame);
 
     //This fuction reveals object with '.video__container' class and blocks scrolling on the page
 
@@ -186,3 +194,30 @@ if (document.querySelector('.gallery')) {
         });
     });
 };
+
+//fix
+// console.log(asyncImages[index].src.replace('.webp', '_HD.webp'))
+
+// const asyncImages = [...document.querySelectorAll('.asyncImage')];
+// const asyncImagesHD = asyncImages.map(img => {
+//     return img.src.replace('.webp', '_HD.webp');
+// });
+// console.log(asyncImagesHD);
+
+// (() => {
+//     'use strict';
+//     // Page is loaded
+//     const objects = document.getElementsByClassName('asyncImage');
+//     Array.from(objects).map((item) => {
+//       // Start loading image
+//         const img = new Image();
+//         img.src = item.dataset.src;
+//       // Once image is loaded replace the src of the HTML element
+//         img.onload = () => {
+//         item.classList.remove('asyncImage');
+//         return item.nodeName === 'IMG' ? 
+//             item.src = item.dataset.src :        
+//             item.style.backgroundImage = `url(${item.dataset.src})`;
+//         };
+//     });
+//     })();
