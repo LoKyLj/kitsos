@@ -449,6 +449,10 @@
         margin-top: 80px;
         width: fit-content;
 
+        &:last-child {
+            margin-top: 20px;
+        }
+
         @include wideMobile {
             margin-top: 60px;
         }

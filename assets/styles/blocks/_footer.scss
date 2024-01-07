@@ -111,3 +111,15 @@
         }
     }
 }
+
+.JDDesign {
+    margin-top: 78px;
+    margin-bottom: 30px;
+    @include fontStyle(Open Sans, 500, 16);
+    @include flexCenter;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        @include hoverUnderlineText;    
+    }
+}

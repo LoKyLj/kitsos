@@ -10,7 +10,9 @@ const revealByLoad = () => {
 }
 
 // window.addEventListener('load', revealByLoad);
-revealByLoad();
+if (document.querySelector('.revealByLoad')) {
+    revealByLoad();
+}
 
 
 //This function adding an '.active' class to the object with '.revealByScroll' class by scrolling the page
